@@ -1,0 +1,3 @@
+trip_id,rider_id,bike_id,start_station_id,end_station_id,started_at,ended_at,distance_km,elapsed_seconds,cost_cents
+1,1,HB-0001,bcycle_heartland_1917,bcycle_heartland_1918,2026-03-05 15:15:00+01,2026-03-05 15:28:00+01,2.350,780,0
+2,2,HB-0101,bcycle_heartland_1918,bcycle_heartland_1917,2026-03-05 15:50:00+01,2026-03-05 16:12:00+01,3.100,1320,0

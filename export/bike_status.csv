@@ -1,0 +1,12 @@
+bike_status_id,bike_id,recorded_at,state,station_id,dock_id,lat,lon,battery_pct,remaining_range_km
+1,HB-0001,2026-03-05 15:00:00+01,available,bcycle_heartland_1917,1,41.244970,-96.015730,92.50,37.20
+2,HB-0001,2026-03-05 15:15:00+01,in_use,,,41.246100,-96.010200,90.10,36.00
+3,HB-0001,2026-03-05 15:28:00+01,available,bcycle_heartland_1918,12,41.256300,-95.934900,87.40,34.10
+4,HB-0002,2026-03-05 15:00:00+01,available,bcycle_heartland_1917,2,41.244970,-96.015730,76.00,28.50
+5,HB-0002,2026-03-05 16:00:00+01,not_available,bcycle_heartland_1917,2,41.244970,-96.015730,74.20,27.90
+6,HB-0101,2026-03-05 15:00:00+01,available,bcycle_heartland_1918,10,41.256300,-95.934900,,
+7,HB-0101,2026-03-05 15:50:00+01,in_use,,,41.254200,-95.946000,,
+8,HB-0101,2026-03-05 16:12:00+01,available,bcycle_heartland_1917,5,41.244970,-96.015730,,
+9,HB-0102,2026-03-05 15:00:00+01,available,bcycle_heartland_1918,11,41.256300,-95.934900,,
+10,HB-0201,2026-03-05 15:00:00+01,available,bcycle_heartland_1917,6,41.244970,-96.015730,,
+11,HB-0301,2026-03-05 15:00:00+01,available,bcycle_heartland_1918,13,41.256300,-95.934900,,

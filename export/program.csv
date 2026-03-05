@@ -1,0 +1,3 @@
+program_id,country,name,short_name,location_text,phone,email,timezone,url,created_at
+bcycle_heartland,US,Heartland Bcycle,Heartland,"Omaha, NE",402-957-2453,info@heartlandbcycle.com,America/Chicago,https://heartland.bcycle.com,2026-03-05 17:00:34.581946+01
+bcycle_trondheim,NO,Trondheim Bysykkel,Trondheim,Trondheim,+47 511 99 900,support@example.no,Europe/Oslo,https://example.no/bike,2026-03-05 17:00:34.581946+01

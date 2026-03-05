@@ -1,0 +1,3 @@
+station_id,program_id,name,short_name,address,postal_code,contact_phone,lat,lon,capacity,created_at
+bcycle_heartland_1917,bcycle_heartland,67th & Pine,67th & Pine,1625 S 67th St,68106,402-957-2453,41.244970,-96.015730,9,2026-03-05 17:00:34.581946+01
+bcycle_heartland_1918,bcycle_heartland,Downtown Library,Library,1401 Jones St,68102,402-957-2453,41.256300,-95.934900,11,2026-03-05 17:00:34.581946+01

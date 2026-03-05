@@ -1,0 +1,7 @@
+bike_id,bike_type,make,model,color,year_acquired,created_at
+HB-0001,electric,GCM,Bcycle 2.0,white,2023,2026-03-05 17:00:34.581946+01
+HB-0002,electric,GCM,Bcycle 2.0,white,2023,2026-03-05 17:00:34.581946+01
+HB-0101,classic,GCM,Bcycle Classic,red,2022,2026-03-05 17:00:34.581946+01
+HB-0102,classic,GCM,Bcycle Classic,red,2022,2026-03-05 17:00:34.581946+01
+HB-0201,smart,GCM,Bcycle Smart,blue,2021,2026-03-05 17:00:34.581946+01
+HB-0301,cargo,GCM,Bcycle Cargo,black,2024,2026-03-05 17:00:34.581946+01

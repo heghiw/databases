@@ -1,0 +1,4 @@
+membership_type_id,kind,duration,description
+1,daily,24:00:00,24-hour pass
+2,monthly,31 days,31-day pass
+3,annual,365 days,365-day pass

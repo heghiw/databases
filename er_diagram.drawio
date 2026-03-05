@@ -1,0 +1,86 @@
+<mxfile host="app.diagrams.net" modified="2026-03-05T00:00:00.000Z" agent="Codex" version="24.7.17" type="device">
+  <diagram id="ERD" name="ER Diagram">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1000" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <!-- Entities -->
+        <mxCell id="program" value="&lt;b&gt;PROGRAM&lt;/b&gt;&lt;br/&gt;program_id (PK)&lt;br/&gt;country&lt;br/&gt;name&lt;br/&gt;short_name&lt;br/&gt;location_text&lt;br/&gt;phone&lt;br/&gt;email&lt;br/&gt;timezone&lt;br/&gt;url" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="40" y="40" width="280" height="230" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="station" value="&lt;b&gt;STATION&lt;/b&gt;&lt;br/&gt;station_id (PK)&lt;br/&gt;program_id (FK)&lt;br/&gt;name&lt;br/&gt;short_name&lt;br/&gt;address&lt;br/&gt;postal_code&lt;br/&gt;contact_phone&lt;br/&gt;lat&lt;br/&gt;lon&lt;br/&gt;capacity" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="380" y="40" width="300" height="250" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="dock" value="&lt;b&gt;DOCK&lt;/b&gt;&lt;br/&gt;dock_id (PK)&lt;br/&gt;station_id (FK)&lt;br/&gt;dock_number&lt;br/&gt;is_active" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="740" y="40" width="240" height="160" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="station_status" value="&lt;b&gt;STATION_STATUS (history)&lt;/b&gt;&lt;br/&gt;station_status_id (PK)&lt;br/&gt;station_id (FK)&lt;br/&gt;reported_at&lt;br/&gt;bikes_available_*&lt;br/&gt;bikes_available_total&lt;br/&gt;docks_available_total&lt;br/&gt;is_accepting_returns&lt;br/&gt;is_renting" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="380" y="330" width="330" height="220" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="bike" value="&lt;b&gt;BIKE&lt;/b&gt;&lt;br/&gt;bike_id (PK)&lt;br/&gt;bike_type&lt;br/&gt;make&lt;br/&gt;model&lt;br/&gt;color&lt;br/&gt;year_acquired" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="40" y="330" width="270" height="190" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="bike_status" value="&lt;b&gt;BIKE_STATUS (history)&lt;/b&gt;&lt;br/&gt;bike_status_id (PK)&lt;br/&gt;bike_id (FK)&lt;br/&gt;recorded_at&lt;br/&gt;state&lt;br/&gt;station_id (FK)&lt;br/&gt;dock_id (FK)&lt;br/&gt;lat&lt;br/&gt;lon&lt;br/&gt;battery_pct&lt;br/&gt;remaining_range_km" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="40" y="560" width="320" height="260" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="rider" value="&lt;b&gt;RIDER_ACCOUNT&lt;/b&gt;&lt;br/&gt;rider_id (PK)&lt;br/&gt;email&lt;br/&gt;full_name&lt;br/&gt;created_at" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="780" y="330" width="260" height="170" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="membership_type" value="&lt;b&gt;MEMBERSHIP_TYPE&lt;/b&gt;&lt;br/&gt;membership_type_id (PK)&lt;br/&gt;kind&lt;br/&gt;duration&lt;br/&gt;description" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="1100" y="330" width="280" height="180" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="membership" value="&lt;b&gt;MEMBERSHIP&lt;/b&gt;&lt;br/&gt;membership_id (PK)&lt;br/&gt;rider_id (FK)&lt;br/&gt;membership_type_id (FK)&lt;br/&gt;purchased_at&lt;br/&gt;expires_at" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="920" y="560" width="300" height="200" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="trip" value="&lt;b&gt;TRIP&lt;/b&gt;&lt;br/&gt;trip_id (PK)&lt;br/&gt;rider_id (FK)&lt;br/&gt;bike_id (FK)&lt;br/&gt;start_station_id (FK)&lt;br/&gt;end_station_id (FK)&lt;br/&gt;started_at&lt;br/&gt;ended_at&lt;br/&gt;distance_km&lt;br/&gt;elapsed_seconds&lt;br/&gt;cost_cents" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="380" y="600" width="360" height="260" as="geometry"/>
+        </mxCell>
+
+        <!-- Relationships (edges) -->
+        <mxCell id="e_program_station" style="endArrow=block;endFill=1;strokeColor=#666666;" edge="1" parent="1" source="station" target="program">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_station_dock" style="endArrow=block;endFill=1;strokeColor=#666666;" edge="1" parent="1" source="dock" target="station">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_station_station_status" style="endArrow=block;endFill=1;strokeColor=#666666;" edge="1" parent="1" source="station_status" target="station">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_bike_bike_status" style="endArrow=block;endFill=1;strokeColor=#666666;" edge="1" parent="1" source="bike_status" target="bike">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_station_bike_status" style="endArrow=block;endFill=1;strokeColor=#666666;" edge="1" parent="1" source="bike_status" target="station">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_dock_bike_status" style="endArrow=block;endFill=1;strokeColor=#666666;" edge="1" parent="1" source="bike_status" target="dock">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_rider_membership" style="endArrow=block;endFill=1;strokeColor=#666666;" edge="1" parent="1" source="membership" target="rider">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_membershiptype_membership" style="endArrow=block;endFill=1;strokeColor=#666666;" edge="1" parent="1" source="membership" target="membership_type">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_rider_trip" style="endArrow=block;endFill=1;strokeColor=#666666;" edge="1" parent="1" source="trip" target="rider">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_bike_trip" style="endArrow=block;endFill=1;strokeColor=#666666;" edge="1" parent="1" source="trip" target="bike">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_station_trip" style="endArrow=block;endFill=1;strokeColor=#666666;" edge="1" parent="1" source="trip" target="station">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

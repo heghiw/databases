@@ -1,0 +1,5 @@
+\i './schema.sql'
+\i './seed.sql'
+\i './procedures.sql'
+\i './assignment3_roles.sql'
+\i './assignment3_analysis.sql'
